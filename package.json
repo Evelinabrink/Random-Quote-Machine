@@ -1,0 +1,25 @@
+{
+  "name": "random-quote-machine",
+  "version": "1.0.0",
+  "description": "free code camp front end project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evelinabrink/Random-Quote-Machine.git"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "html",
+    "api"
+  ],
+  "author": "evbrink",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evelinabrink/Random-Quote-Machine/issues"
+  },
+  "homepage": "https://github.com/Evelinabrink/Random-Quote-Machine#readme"
+}
