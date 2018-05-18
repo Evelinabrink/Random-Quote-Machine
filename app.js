@@ -1,10 +1,9 @@
 let arr = ["quote1", "quote2", "quote3", "quote4", "quote5"];
-newArr = [];
+let newArr = [];
 let quote = document.getElementById('newQuote');
 
 window.onload = function () {
     shuffle(arr);
-    console.log(arr);
 }
 
 // fisher-yates shuffle function
@@ -17,14 +16,16 @@ function shuffle(a) {
 }
 
 quote.addEventListener('click', function (){
+    // if array is empty, store newArr into arr
     if (arr.length === 0) {
         arr = shuffle(newArr);
-        console.log(arr + "shuffled arr!");
         newArr = [];
     }
 
     let newQuote = arr.shift();
     document.querySelector('blockquote').textContent = newQuote;
+
+    // store newQuote into newArr
     newArr.push(newQuote);
     console.log(newArr);
 })
