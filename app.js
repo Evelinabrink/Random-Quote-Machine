@@ -1,31 +1,27 @@
-let arr = ["quote1", "quote2", "quote3", "quote4", "quote5"];
-let newArr = [];
 let quote = document.getElementById('newQuote');
 
-window.onload = function () {
-    shuffle(arr);
-}
-
-// fisher-yates shuffle function
-function shuffle(a) {
-    for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-}
-
 quote.addEventListener('click', function (){
-    // if array is empty, store newArr into arr
-    if (arr.length === 0) {
-        arr = shuffle(newArr);
-        newArr = [];
+
+    // get random quote from api
+    fetch('https://random-quote-generator.herokuapp.com/api/quotes/random')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+
+      // Examine the text in the response
+      response.json().then(function(data) {
+        console.log(data);
+        // output quote and author
+        document.querySelector('blockquote').textContent = data.quote;
+        document.querySelector('h3').textContent = data.author;
+      });
     }
-
-    let newQuote = arr.shift();
-    document.querySelector('blockquote').textContent = newQuote;
-
-    // store newQuote into newArr
-    newArr.push(newQuote);
-    console.log(newArr);
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
 })
