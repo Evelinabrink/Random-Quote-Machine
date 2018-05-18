@@ -1,5 +1,18 @@
 let quote = document.getElementById('newQuote');
+let body = document.querySelector('body');
 
+// function to get random color
+function getRandomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
+// event listener for button
 quote.addEventListener('click', function (){
 
     // get random quote from api
@@ -24,4 +37,8 @@ quote.addEventListener('click', function (){
   .catch(function(err) {
     console.log('Fetch Error :-S', err);
   });
+
+  // change background-color
+  body.style.backgroundColor = getRandomColor();
+
 })
