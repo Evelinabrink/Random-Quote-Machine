@@ -1,8 +1,8 @@
-- add twitter icon
-- change background colours when pressing button
-- link to twitter
-- add quotation marks
+// TO DO:
 
+- add twitter icon
+- share to twitter functionality
+- smooth transition between background-colors
 
 // JAVASCRIPT
 
