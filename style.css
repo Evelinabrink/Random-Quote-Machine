@@ -20,7 +20,8 @@ h1 {
 blockquote {
     font-family: 'Shadows Into Light', cursive;
     color: #d7f4ff;
-    font-size: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 h3 {

@@ -16,7 +16,7 @@ quote.addEventListener('click', function (){
       response.json().then(function(data) {
         console.log(data);
         // output quote and author
-        document.querySelector('blockquote').textContent = data.quote;
+        document.querySelector('blockquote').textContent = '"' + data.quote + '"';
         document.querySelector('h3').textContent = data.author;
       });
     }

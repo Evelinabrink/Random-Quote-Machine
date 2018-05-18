@@ -1,4 +1,7 @@
 - add twitter icon
+- change background colours when pressing button
+- link to twitter
+- add quotation marks
 
 
 // JAVASCRIPT
