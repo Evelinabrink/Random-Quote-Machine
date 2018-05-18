@@ -1,0 +1,7 @@
+- quotes api
+- add twitter icon
+
+
+// JAVASCRIPT
+- if out of quotes, reshuffle
+

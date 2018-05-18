@@ -1,0 +1,36 @@
+body {
+
+    background-color: #009fb2;
+}
+
+.container {
+    background-color:#0078a8;
+    margin: 20%;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+blockquote {
+    font-family: 'Shadows Into Light', cursive;
+    color: #d7f4ff;
+    font-size: 30px;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #f0802b;
+    cursor: pointer;
+    color: #d7f4ff;
+}
