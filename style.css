@@ -6,8 +6,7 @@ body {
 .container {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 10%;
-    border-radius: 5px;
+    border: solid white 10px;
     padding: 50px;
     background-image: url("https://images.unsplash.com/photo-1523787357539-54a7d16e0c8a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1deaa5f8a85aded2a2f072e0f642ed7&auto=format&fit=crop&w=1950&q=80");
     background-size: 100%;
@@ -16,6 +15,9 @@ body {
 h1 {
     text-align: center;
     padding-top: 50px;
+    font-family: 'Anton', sans-serif;
+    color: #d7f4ff;
+    font-size: 50px;
 }
 
 blockquote {
@@ -28,7 +30,7 @@ blockquote {
 h3 {
     display: flex;
     justify-content: flex-end;
-
+    color: white;
 }
 
 button {
@@ -37,4 +39,5 @@ button {
     background-color: #f0802b;
     cursor: pointer;
     color: #d7f4ff;
+    text-align: center;
 }
