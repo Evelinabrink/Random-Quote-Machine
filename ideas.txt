@@ -1,6 +1,4 @@
 // TO DO:
-- share to twitter functionality
-- smooth transition between background-colors
 
 // JAVASCRIPT
 
