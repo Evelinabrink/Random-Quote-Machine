@@ -40,4 +40,10 @@ button {
     cursor: pointer;
     color: #d7f4ff;
     text-align: center;
+    margin-right: 10px;
+}
+
+.icon {
+    width: 12px;
+    padding-right: 2px;
 }
