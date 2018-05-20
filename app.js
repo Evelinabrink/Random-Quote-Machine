@@ -33,7 +33,7 @@ quote.addEventListener('click', function (){
         document.querySelector('h3').textContent = data.author;
         // change background-color
         body.style.backgroundColor = getRandomColor();
-
+        body.style.transition = "background-color 500ms linear";
       });
     }
   )
