@@ -1,6 +1,4 @@
 // TO DO:
-
-- add twitter icon
 - share to twitter functionality
 - smooth transition between background-colors
 

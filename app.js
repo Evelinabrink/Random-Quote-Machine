@@ -31,14 +31,13 @@ quote.addEventListener('click', function (){
         // output quote and author
         document.querySelector('blockquote').textContent = '"' + data.quote + '"';
         document.querySelector('h3').textContent = data.author;
+        // change background-color
+        body.style.backgroundColor = getRandomColor();
+
       });
     }
   )
   .catch(function(err) {
     console.log('Fetch Error :-S', err);
   });
-
-  // change background-color
-  body.style.backgroundColor = getRandomColor();
-
 })
